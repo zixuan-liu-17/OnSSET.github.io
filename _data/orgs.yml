@@ -1,41 +1,41 @@
 
 partners:
   - name: worldbank
-    logo: /assets/partners/WBhorizontal.png
+    logo: /assets/img/partners/WBhorizontal.png
     display_name: World Bank Group
     url: https://www.worldbank.org/ext/en/home
 
   - name: esmap
-    logo: /assets/partners/ESMAP.png
+    logo: /assets/img/partners/ESMAP.png
     display_name: ESMAP
     url: https://www.esmap.org/
 
   - name: seforall
-    logo: /assets/partners/SEforALL.png
+    logo: /assets/img/partners/SEforALL.png
     display_name: Sustainable Energy for All (SEforALL)
     url: https://www.seforall.org/
 
   - name: kth
-    logo: /assets/partners/KTH.png
+    logo: /assets/img/partners/KTH.png
     display_name: KTH Royal Institute of Technology
     url: https://www.energy.kth.se/energy-systems/division-of-energy-systems-1.937036
 
   - name: iea
-    logo: /assets/partners/IEA.png
+    logo: /assets/img/partners/IEA.png
     display_name: International Energy Agency (IEA)
     url: https://www.iea.org/
 
   - name: wri
-    logo: /assets/partners/WRI.jpg
+    logo: /assets/img/partners/WRI.jpg
     display_name: World Resources Institute (WRI)
     url: https://www.wri.org/
 
   - name: irena
-    logo: /assets/partners/IRENA.png
+    logo: /assets/img/partners/IRENA.png
     display_name: International Renewable Energy Agency (IRENA)
     url: https://www.irena.org/
 
   - name: ccg
-    logo: /assets/partners/CCG.png
+    logo: /assets/img/partners/CCG.png
     display_name: Climate Compatible Growth (CCG)
     url: https://climatecompatiblegrowth.com/
