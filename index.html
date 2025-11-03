@@ -1,0 +1,134 @@
+---
+layout: home
+title: Open-Source Spatial Electrification tool 
+description: OnSSET
+org_count: 60
+permalink: /
+---
+
+<div class="container-lg p-responsive text-center py-4 py-lg-6 my-xl-4" style="padding: 2rem;">
+  <h1 class="alt-h1 mb-4 intro-title">Open-Source Spatial Electrification tool (OnSSET)</h1>
+  <p class="text-gray" style="max-width: 800px; margin: 0 auto;">
+    OnSSET is a GIS-based optimization tool developed to support electrification planning and decision making
+    for achieving energy access goals in currently unserved locations. The tool’s flexible and modular codebase 
+    allows customization of analysis resolution, GIS input data, technology types and costs, and electrification policies 
+    as needed. 
+    <br><br>
+    OnSSET is a dynamic open-source project: improvements are integrated in real time and guided by a steering committee. 
+    Membership and contributions are open to everyone.
+  </p>
+  <a href="{{ site.baseurl }}/about/" class="btn btn-outline-primary sky-blue-accent mt-4" style="border-color: #3490dc; color: #3490dc;">Learn More</a>
+</div>
+</div><!-- ends .full-width that started in header.html -->
+
+<section class="bg-gray-light py-5">
+  <div class="container-lg p-responsive text-center">
+    <h2 class="alt-h2 mb-4">Applications</h2>
+    <div class="row justify-content-center text-left">
+
+      <a href="https://electrifynow.energydata.info/" class="col-md-4 mb-5 text-decoration-none card-link">
+        <div class="card p-3 h-100">
+          <h3 class="alt-h3 mb-2">⚡ The Global Electrification Platform</h3>
+          <p class="text-gray">An interactive open-access tool for exploring least-cost electrification pathways globally.</p>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3390/en12071395" class="col-md-4 mb-5 text-decoration-none card-link">
+        <div class="card p-3 h-100">
+          <h3 class="alt-h3 mb-2">🌍 The Role of Open Access Data in Geospatial Electrification Planning (Malawi)</h3>
+          <p class="text-gray">An OnSSET-based case study showing how open data supports SDG7 achievement.</p>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.1088/1748-9326/aa7b29" class="col-md-4 mb-5 text-decoration-none card-link">
+        <div class="card p-3 h-100">
+          <h3 class="alt-h3 mb-2">💡 Lighting the World</h3>
+          <p class="text-gray">The first large-scale application of OnSSET for Sub-Saharan Africa.</p>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.1016/j.esr.2021.100714" class="col-md-4 mb-5 text-decoration-none card-link">
+        <div class="card p-3 h-100">
+          <h3 class="alt-h3 mb-2">🗺️ Scenario Discovery in Burkina Faso</h3>
+          <p class="text-gray">A study applying scenario discovery for least-cost electrification modelling.</p>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.1016/j.apenergy.2020.114749" class="col-md-4 mb-5 text-decoration-none card-link">
+        <div class="card p-3 h-100">
+          <h3 class="alt-h3 mb-2">⚖️ Planning with Justice: Tanzania</h3>
+          <p class="text-gray">Using spatial modelling to incorporate justice into electricity pricing frameworks.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="text-center">
+      <a href="/applications/" class="btn btn-outline">See more &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<style>
+.card-link .card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-left: 4px solid #0066cc;
+  background-color: #f9f9f9;
+}
+
+.card-link:hover .card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+</style>
+
+<section class="">
+  <div class="container-lg p-responsive py-5 py-md-6">
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="partner-institutions">Active Partner Institutions and Programmes</h2>
+    <!-- <p class="alt-lead text-gray text-center col-md-10 mx-auto">Active Partner Institutions and Programmes</a>.</p> -->
+  </div>
+  <div style="overflow: hidden;">
+    {% assign count = 0 %}
+    {% for partner in site.data.orgs.partners %}
+      {% assign count = count | plus:1 %}
+    {% endfor %}
+    <!-- <div class="featured-orgs text-center p-2 m-2">
+      {% for org in site.featured_orgs %}
+      <a href="https://github.com/{{ org }}" class="animate-in">{% avatar user=org size=80 %}</a>
+      {% endfor %}
+    </div> -->
+    <div class="featured-orgs text-center p-2 m-2">
+        {% for partner in site.data.orgs.partners %}
+          <a href="{{ partner.url }}" 
+             class="animate-in" target="_blank">
+            <img src="{{ site.baseurl }}{{ partner.logo }}" width="auto" max-width="160" height="80" margin="10" alt="{{ partner.display_name }}">
+          </a>
+        {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+<section id="contact-a-human" class="bg-gray-light">
+  <div class="container-lg p-responsive py-5 py-md-6 text-center">
+    <span class="text-center">
+      {% octicon people height:42 class:"d-block mx-auto mb-4 text-center fill-gray" aria-label:people %}
+    </span>
+    <h3 class="alt-h2 mb-4">Explore OnSSET on</h3>
+    <p class="f2-light text-white">
+      {% for platform in site.data.social_media %}
+        <a href="{{ platform.url }}" class="px-2" style="text-decoration: none !important;">
+          <i class="{{ platform.icon }} logo logo-hover py-3" style="font-size: 32px"></i>
+        </a>
+      {% endfor %}
+    </p>
+  </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</div>
+</div>

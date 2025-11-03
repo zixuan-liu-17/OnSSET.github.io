@@ -1,0 +1,41 @@
+
+partners:
+  - name: worldbank
+    logo: /assets/EMP/partners/WBhorizontal.png
+    display_name: World Bank Group
+    url: https://www.worldbank.org/ext/en/home
+
+  - name: esmap
+    logo: /assets/EMP/partners/ESMAP.png
+    display_name: ESMAP
+    url: https://www.esmap.org/
+
+  - name: seforall
+    logo: /assets/EMP/partners/SEforALL.png
+    display_name: Sustainable Energy for All (SEforALL)
+    url: https://www.seforall.org/
+
+  - name: kth
+    logo: /assets/EMP/partners/KTH.png
+    display_name: KTH Royal Institute of Technology
+    url: https://www.energy.kth.se/energy-systems/division-of-energy-systems-1.937036
+
+  - name: iea
+    logo: /assets/EMP/partners/IEA.png
+    display_name: International Energy Agency (IEA)
+    url: https://www.iea.org/
+
+  - name: wri
+    logo: /assets/EMP/partners/WRI.jpg
+    display_name: World Resources Institute (WRI)
+    url: https://www.wri.org/
+
+  - name: irena
+    logo: /assets/EMP/partners/IRENA.png
+    display_name: International Renewable Energy Agency (IRENA)
+    url: https://www.irena.org/
+
+  - name: ccg
+    logo: /assets/EMP/partners/CCG.png
+    display_name: Climate Compatible Growth (CCG)
+    url: https://climatecompatiblegrowth.com/
