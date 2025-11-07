@@ -38,7 +38,7 @@ permalink: /contact/
           <p class="text-gray">Publish case studies, visualisations, and insights from your national or regional OnSSET work.</p>
         </div>
         <div class="benefit-card text-center">
-          <img src="/assets/img/sparkles.svg" height="40" class="mb-3" alt="Events">
+          <img src="{{ '/assets/img/sparkles.svg' | relative_url }}" height="40" class="mb-3" alt="Events">
           <h5>Stay Updated</h5>
           <p class="text-gray">Follow upcoming training programmes, EMP events, and global workshops featuring OnSSET.</p>
         </div>

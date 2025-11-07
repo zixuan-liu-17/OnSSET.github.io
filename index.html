@@ -121,7 +121,7 @@ permalink: /
         {% if platform.icon contains 'bi-' %}
           <i class="{{ platform.icon }} logo logo-hover py-3" style="font-size: 32px"></i>
         {% else %}
-          <img src="{{ platform.icon }}" alt="{{ platform.name }}" class="logo logo-hover py-3" style="height: 32px; width: auto;">
+          <img src="{{ platform.icon | relative_url }}" alt="{{ platform.name }}" class="logo logo-hover py-3" style="height: 32px; width: auto;">
         {% endif %}
       </a>
     {% endfor %}

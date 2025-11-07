@@ -90,7 +90,7 @@ permalink: /about/
       <!-- Model Documentation -->
       <div class="icon-link-item">
         <a href="https://onsset.readthedocs.io/en/latest/index.html" target="_blank">
-          <img src="/assets/img/Rtdicon.png" width="80" height="80" alt="ReadTheDocs icon" />
+          <img src="{{ '/assets/img/Rtdicon.png' | relative_url }}" width="80" height="80" alt="ReadTheDocs icon" />
           <h3 class="aboutpage-subtitle text-primary">Model Documentation</h3>
         </a>
       </div>
