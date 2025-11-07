@@ -59,7 +59,7 @@ permalink: /contact/
       </div>
 
       <div class="mt-4">
-        <a href="/learning_capacity/" class="btn btn-primary">View Upcoming Events →</a>
+        <a href="{{ '/learning_capacity/' | relative_url }}" class="btn btn-primary">View Upcoming Events →</a>
       </div>
     </div>
 

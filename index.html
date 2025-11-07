@@ -64,7 +64,7 @@ permalink: /
     </div>
 
     <p class="text-center">
-      <a href="/applications/" class="btn btn-outline">See more &rarr;</a>
+      <a href="{{ '/applications/' | relative_url }}" class="btn btn-outline">See more &rarr;</a>
     </p>
   </div>
 </section>
@@ -117,10 +117,14 @@ permalink: /
     <h3 class="alt-h2 mb-4">Explore OnSSET on</h3>
     <p class="f2-light text-white">
       {% for platform in site.data.social_media %}
-        <a href="{{ platform.url }}" class="px-2" style="text-decoration: none !important;">
+      <a href="{{ platform.url }}" class="px-2" style="text-decoration: none !important;">
+        {% if platform.icon contains 'bi-' %}
           <i class="{{ platform.icon }} logo logo-hover py-3" style="font-size: 32px"></i>
-        </a>
-      {% endfor %}
+        {% else %}
+          <img src="{{ platform.icon }}" alt="{{ platform.name }}" class="logo logo-hover py-3" style="height: 32px; width: auto;">
+        {% endif %}
+      </a>
+    {% endfor %}
     </p>
   </div>
 </section>
