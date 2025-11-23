@@ -66,7 +66,6 @@ relative_permalinks: false
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules","*_tmp.html","*_tmp.*"]
 markdown: kramdown
 theme: jekyll-theme-primer
-# 添加以下设置
 primer_theme:
   enable: true
 plugins:
